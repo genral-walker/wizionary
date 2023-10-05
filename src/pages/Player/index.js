@@ -73,9 +73,7 @@ const Player = () => {
         <div>
           <p className="title">Wizionary - Drupal Arts</p>
 
-          <div className="wave">
-            <div ref={waveformContainerRef} />
-          </div>
+          <div ref={waveformContainerRef} className="wave" />
 
           <div className="controls">
             {play ? (
@@ -93,6 +91,7 @@ const Player = () => {
                 }}
               />
             )}
+
             <StopIcon
               className="stop"
               onClick={() => {
@@ -113,6 +112,7 @@ const Player = () => {
                 }
               }}
             />
+
             <ZoomInIcon
               className="zoomIn"
               onClick={() => {
